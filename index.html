@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giustino Esposito - ML Engineer</title>
+    <title>Giustino Esposito - Senior Software Engineer | AI Specialist</title>
     <style>
         * {
             margin: 0;
@@ -43,6 +43,9 @@
             font-size: 1.5rem;
             margin-bottom: 2rem;
             opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .contact-info {
@@ -115,6 +118,10 @@
             border-radius: 10px;
             border-left: 4px solid #667eea;
         }
+        
+        .experience-item:last-of-type {
+            margin-bottom: 0;
+        }
 
         .experience-header {
             display: flex;
@@ -140,32 +147,6 @@
         .date-location {
             color: #718096;
             font-size: 0.9rem;
-        }
-
-        .tech-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.5rem;
-            margin: 1rem 0;
-        }
-
-        .tech-tag {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            padding: 0.3rem 0.8rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-        }
-
-        .activities {
-            margin-top: 1rem;
-        }
-
-        .activities h4 {
-            color: #2d3748;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
         }
 
         .activities ul {
@@ -209,8 +190,8 @@
         }
 
         .grade {
-            color: #e53e3e;
-            font-weight: 600;
+            color: #718096;
+            font-weight: 500;
             margin-bottom: 1rem;
         }
 
@@ -250,6 +231,11 @@
             left: 0;
             color: #ed8936;
         }
+        
+        .cert-item {
+            font-weight: 600;
+            color: #2d3748;
+        }
 
         .cta-section {
             text-align: center;
@@ -276,74 +262,19 @@
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero .subtitle {
-                font-size: 1.2rem;
-            }
-            
-            .contact-info {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .section {
-                padding: 2rem 1.5rem;
-            }
-            
-            .experience-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+            .hero h1 { font-size: 2.5rem; }
+            .hero .subtitle { font-size: 1.2rem; }
+            .contact-info { flex-direction: column; align-items: center; gap: 1rem; }
+            .section { padding: 2rem 1.5rem; }
+            .experience-header { flex-direction: column; align-items: flex-start; }
         }
 
-        .floating-elements {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .floating-circle {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.1);
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-circle:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            top: 20%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .floating-circle:nth-child(2) {
-            width: 120px;
-            height: 120px;
-            top: 60%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-
-        .floating-circle:nth-child(3) {
-            width: 60px;
-            height: 60px;
-            top: 40%;
-            left: 80%;
-            animation-delay: 4s;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
+        .floating-elements { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: -1; }
+        .floating-circle { position: absolute; border-radius: 50%; background: rgba(255,255,255,0.1); animation: float 6s ease-in-out infinite; }
+        .floating-circle:nth-child(1) { width: 80px; height: 80px; top: 20%; left: 10%; animation-delay: 0s; }
+        .floating-circle:nth-child(2) { width: 120px; height: 120px; top: 60%; right: 10%; animation-delay: 2s; }
+        .floating-circle:nth-child(3) { width: 60px; height: 60px; top: 40%; left: 80%; animation-delay: 4s; }
+        @keyframes float { 0%, 100% { transform: translateY(0px) rotate(0deg); } 50% { transform: translateY(-20px) rotate(180deg); } }
     </style>
 </head>
 <body>
@@ -356,170 +287,151 @@
     <div class="container">
         <div class="hero">
             <h1>Giustino Esposito</h1>
-            <p class="subtitle">Machine Learning Engineer & AI Specialist</p>
+            <p class="subtitle">Senior Software Engineer specializing in Advanced RAG & AI Systems</p>
             
             <div class="contact-info">
                 <a href="mailto:giustino98@gmail.com" class="contact-item">
-                    📧 giustino98@gmail.com
+                    📧 Email
                 </a>
-                <span class="contact-item">
-                    📍 Naples, IT
-                </span>
-                <a href="#" class="contact-item">
-                    💼 LinkedIn Profile
+                <a href="https://www.linkedin.com/in/giustino-esposito-1157a4139/" target="_blank" class="contact-item">
+                    💼 LinkedIn
+                </a>
+                <a href="https://github.com/giustino98" target="_blank" class="contact-item">
+                    💻 GitHub
                 </a>
             </div>
         </div>
 
         <div class="main-content">
             <div class="section">
-                <h2 class="section-title">Professional Experience</h2>
+                <h2 class="section-title">About Me</h2>
+                <p style="color: #4a5568; font-size: 1.1rem;">
+                    My guiding principle is to always go beyond the surface level. I believe that what separates "it works" from "it works beautifully" comes down to a deep grasp of the fundamentals and a relentless focus on the details.
+                    <br><br>
+                    It's a philosophy I apply to everything I build.
+                    <br><br>
+                    Some of the thinking that has deeply influenced my approach:
+                </p>
+                <ul style="list-style: none; padding-top: 1rem; color: #4a5568;">
+                    <li>• "Atomic Habits" by James Clear</li>
+                    <li>• "Deep Work" by Cal Newport</li>
+                    <li>• "Thinking, Fast and Slow" by Daniel Kahneman</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Work Experience</h2>
                 
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Senior Software Engineer</div>
+                            <div class="company">Tinexta Innovation Hub</div>
+                        </div>
+                        <div class="date-location">June 2025 - Present | Naples, IT</div>
+                    </div>
+                    <div class="activities">
+                        <ul>
+                            <li>Contributed as a core developer to Lextel AI, a hybrid search platform (Elasticsearch + GenAI) <strong>featured in an official Elastic case study</strong> for reducing legal research time from hours to minutes.</li>
+                            <li>Resolved a key driver of customer dissatisfaction by implementing a parallel reranking system leveraging Gemini Flash, achieving a <strong>100% reduction in user-reported complaints</strong> regarding missing information.</li>
+                            <li>Engineered a large-scale document processing pipeline, reducing analysis costs <strong>by 90%</strong> (from an estimated €1,000 to €100) for a 50,000-page legal corpus by leveraging asynchronous Gemini Batch APIs.</li>
+                            <li>Architected a multi-agent patent analysis workflow, increasing retrieval accuracy by an estimated <strong>15%</strong> by orchestrating LLM calls for seed analysis, parallel query generation, and final results reranking.</li>
+                        </ul>
+                    </div>
+                </div>
+
                 <div class="experience-item">
                     <div class="experience-header">
                         <div>
                             <div class="job-title">Machine Learning Engineer</div>
                             <div class="company">NTT Data</div>
                         </div>
-                        <div class="date-location">Feb 2022 - Present | Naples, IT</div>
+                        <div class="date-location">Feb 2022 - June 2025 | Naples, IT</div>
                     </div>
-                    
-                    <div class="tech-tags">
-                        <span class="tech-tag">Azure OpenAI</span>
-                        <span class="tech-tag">BERT</span>
-                        <span class="tech-tag">Gemini</span>
-                        <span class="tech-tag">Dialogflow CX</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">FastAPI</span>
-                        <span class="tech-tag">C#</span>
-                        <span class="tech-tag">Azure</span>
-                        <span class="tech-tag">Google Cloud</span>
-                        <span class="tech-tag">Docker</span>
-                        <span class="tech-tag">Jenkins</span>
-                    </div>
-
                     <div class="activities">
-                        <h4>Key Achievements & Activities:</h4>
                         <ul>
-                            <li>Led development and deployment of conversational solutions on major cloud platforms (Azure, Google Cloud), significantly improving software engineering and data science capabilities</li>
-                            <li>Developed advanced NLP solutions including multi-class mail classifier and automatic CV skills extraction tool, reducing HR analysis time by significant margins</li>
-                            <li>Led a small team building conversational solutions for the insurance sector, creating chatbots/voicebots that reduced contact center operator requirements</li>
-                            <li>Implemented GenAI approaches with RAG architecture for document information extraction, researching and integrating various OCR solutions</li>
-                            <li>Conducted technical interviews to assess candidate skills and team suitability</li>
-                            <li>Managed production voicebot monitoring, REST API implementation, debugging, alert systems, and data storage solutions</li>
+                            <li>Led the end-to-end design and deployment of a conversational AI platform, serving as the <strong>technical lead for a cross-functional team of 7</strong> (PMs, analysts, developers). The solution <strong>automated 100% of after-hours claims</strong> and <strong>reduced contact center operational load by 50%</strong>.</li>
+                            <li>Mentored junior team members to achieve full project autonomy, architecting a scalable microservices solution (Dialogflow CX, IVR, backend APIs) and ensuring a successful handover upon departure.</li>
+                            <li>Recognized by the client as a <strong>key technology partner ("cornerstone of the project")</strong>, transforming the relationship from a vendor to an integrated team and solidifying the client's AI roadmap.</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Education</h2>
-                
-                <div class="education-item">
-                    <div class="degree">Master of Science in Computer Engineering</div>
-                    <div class="university">Università Federico II, Naples</div>
-                    <div class="date-location">Sept 2019 - March 2022</div>
-                    <div class="grade">🎓 Graduation Grade: 110/110 with Honors (4.0 GPA)</div>
-                    
-                    <div class="activities">
-                        <h4>Thesis Project:</h4>
-                        <p style="color: #4a5568; margin-bottom: 1rem;">"A chatbot based on deep learning techniques for implementing a real-time recommendation system"</p>
-                        
-                        <h4>Key Technologies & Activities:</h4>
-                        <ul>
-                            <li>Trained NLP models using open-source Rasa Framework for chatbot development</li>
-                            <li>Implemented YOLO object-detector for real-time house item recognition via webcam</li>
-                            <li>Integrated chatbot into full-stack software system with Docker deployment</li>
-                        </ul>
-                    </div>
+                <h2 class="section-title">Technical Leadership & Projects</h2>
+                <div class="activities">
+                    <ul>
+                        <li><strong>Author of technical explorations</strong> into advanced AI concepts, including LLM inference optimization (Speculative Decoding), agentic architectures (Self-RAG), and cross-platform orchestration (Semantic Kernel).</li>
+                        <li><strong>Developer of open-source projects</strong> to explain and implement state-of-the-art AI techniques, including a from-scratch implementation of speculative decoding that achieved a <strong>2.4x inference speedup</strong> in local tests.</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Skills & Expertise</h2>
-                
+                <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>🤖 AI & Machine Learning</h4>
-                        <ul>
-                            <li>Classical ML (BERT, NLP)</li>
-                            <li>Generative AI (GPT, Gemini)</li>
-                            <li>RAG Architecture</li>
-                            <li>Computer Vision (YOLO)</li>
-                            <li>Deep Learning</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>☁️ Cloud & DevOps</h4>
-                        <ul>
-                            <li>Microsoft Azure</li>
-                            <li>Google Cloud Platform</li>
-                            <li>Azure Functions & Cosmos DB</li>
-                            <li>Docker & Containerization</li>
-                            <li>Jenkins & Azure DevOps</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>💻 Development</h4>
+                        <h4>🚀 Core Stack</h4>
                         <ul>
                             <li>Python & FastAPI</li>
-                            <li>C# & .NET</li>
-                            <li>Chatbot/Voicebot Development</li>
-                            <li>REST API Design</li>
-                            <li>Full-Stack Development</li>
+                            <li>RAG Architecture</li>
+                            <li>LLM Integration (Gemini, Azure OpenAI)</li>
+                            <li>Docker</li>
                         </ul>
                     </div>
-                    
                     <div class="skill-category">
-                        <h4>🎯 Soft Skills</h4>
+                        <h4>☁️ Cloud Platforms & MLOps</h4>
                         <ul>
-                            <li>Analytical Thinking</li>
-                            <li>Problem Solving</li>
-                            <li>Team Leadership</li>
-                            <li>Technical Interviews</li>
-                            <li>English (C1) & Italian (Native)</li>
+                            <li>Google Cloud Platform (GCP)</li>
+                            <li>Microsoft Azure</li>
+                            <li>Azure DevOps (Pipeline Authoring)</li>
+                            <li>Kubernetes (GKE) & OpenShift</li>
+                            <li>BigQuery & SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>🤖 AI Frameworks & Orchestration</h4>
+                        <ul>
+                            <li>Concepts: NLP, Deep Search, Agentic Workflows, Prompt Engineering</li>
+                            <li>Libraries: LangGraph, LangChain, Semantic Kernel, Hugging Face</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>⚙️ Backend & Data Stores</h4>
+                        <ul>
+                            <li>API Development: FastAPI, Spring</li>
+                            <li>Databases: Elasticsearch, Azure Cosmos DB, Vector Search (Azure AI Search)</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <h2 class="section-title">Certifications & Interests</h2>
-                
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h4>🏆 Certifications</h4>
-                        <ul>
-                            <li>AWS Certified Machine Learning – Specialty</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h4>🎯 Interests</h4>
-                        <ul>
-                            <li>AI Research Papers</li>
-                            <li>Personal Finance</li>
-                            <li>Gaming</li>
-                            <li>Technology Innovation</li>
-                        </ul>
-                    </div>
+                <h2 class="section-title">Education & Certifications</h2>
+                <div class="education-item" style="margin-bottom: 2rem;">
+                    <div class="degree">Master of Science in Computer Engineering</div>
+                    <div class="university">University of Naples Federico II</div>
+                    <div class="date-location">Sept 2019 - March 2022</div>
+                    <div class="grade">Grade: 110/110 with honors</div>
+                </div>
+                <div class="education-item" style="border-left-color: #667eea;">
+                     <div class="degree">AWS Certified Machine Learning – Specialty</div>
+                     <div class="university">Amazon Web Services</div>
+                     <div class="grade" style="color: #e53e3e; font-weight: 600;">🏆 Perfect Score: 1000/1000</div>
                 </div>
             </div>
         </div>
 
         <div class="cta-section">
-            <h2>Ready to Innovate Together?</h2>
-            <p>I'm passionate about leveraging AI and machine learning to solve complex problems and drive business value. Let's discuss how I can contribute to your team's success.</p>
+            <h2>Let's Build Something Great</h2>
+            <p>I'm passionate about leveraging AI to solve complex problems and create value. If you're looking for a dedicated engineer with a deep interest in building robust and innovative solutions, let's connect.</p>
             <a href="mailto:giustino98@gmail.com" class="cta-button">Get In Touch</a>
         </div>
     </div>
 
     <script>
-        // Add smooth scrolling and interactive elements
         document.addEventListener('DOMContentLoaded', function() {
-            // Animate elements on scroll
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
@@ -530,29 +442,16 @@
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
 
-            // Observe all sections
-            document.querySelectorAll('.section, .experience-item, .education-item, .skill-category').forEach(el => {
+            document.querySelectorAll('.section, .experience-item, .education-item, .skill-category, .hero > *, .cta-section > *').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
                 el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
                 observer.observe(el);
-            });
-
-            // Add hover effects to tech tags
-            document.querySelectorAll('.tech-tag').forEach(tag => {
-                tag.addEventListener('mouseenter', function() {
-                    this.style.transform = 'scale(1.05)';
-                    this.style.boxShadow = '0 4px 15px rgba(102, 126, 234, 0.4)';
-                });
-                
-                tag.addEventListener('mouseleave', function() {
-                    this.style.transform = 'scale(1)';
-                    this.style.boxShadow = 'none';
-                });
             });
         });
     </script>
